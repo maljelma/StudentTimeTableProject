@@ -1,0 +1,247 @@
+#user-name {
+    padding: 10px;
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 10px;
+
+    font-size: 12pt;
+    font-weight: 600;
+    /* border */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred);
+    background-repeat: no-repeat;
+    background-size:
+        /* horizontal sides - left */
+        2px 35%,
+        /* horizontal sides - right */
+        2px 70%,
+        /* cross line */
+        100% 35%,
+        /* vertical sides - top */
+        20% 0px,
+        /* vertical sides - bottom */
+        20% 2px;
+    background-position:
+        /* h - l */
+        left center,
+        /* h - r */
+        right bottom,
+        /* c */
+        center center,
+        /* v - t */
+        top left,
+        /* v - b */
+        bottom right;
+}
+
+.c-algin-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-item {
+    width: fit-content;
+}
+
+#home-header-container {
+    padding: 10px;
+    font-size: 46pt;
+    /* border */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        2px 70%,
+        100% 35%,
+        20% 2px,
+        20% 2px;
+    background-position:
+        left top,
+        right bottom,
+        center center,
+        top left,
+        bottom right;
+}
+
+
+#display-course {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-course-body {
+    width: fit-content;
+    border: 0px solid #000;
+    padding-top: 10px;
+}
+
+#current-course-body>.title>a{
+    text-decoration: none;
+}
+#current-course-body>.title {
+    min-width: 600px;
+    min-height: 10px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: table;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    /* style */
+    background-image: linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(darkred, darkred);
+    background-repeat: no-repeat;
+    background-size: 2px 70%,
+        2px 70%,
+        100% 35%,
+        100% 0px;
+    background-position: left center,
+        right center,
+        left center,
+        bottom left;
+}
+
+/* TIME */
+#current-course-body>.time-group-a>.group {
+    width: fit-content;
+    float: left;
+    display: flex;
+}
+
+#current-course-body>.time-group-a>.group>.time-start {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        2px 50%,
+        100% 50%;
+    background-position:
+        top left,
+        top left,
+        left top;
+}
+
+#current-course-body>.time-group-a>.group>.time-dash {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        100% 50%;
+    background-position:
+        top left,
+        left top;
+}
+
+#current-course-body>.time-group-a>.group>.time-end {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        100% 50%;
+    background-position:
+        top left,
+        left top;
+}
+
+/* STATE */
+#current-course-body>.state-group-a {
+    width: 100%;
+    display: table;
+}
+
+#current-course-body>.state-group-a>.group {
+    width: fit-content;
+    float: right;
+}
+
+#current-course-body>.state-group-a>.group>.state {
+    width: fit-content;
+    visibility: visible;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        2px 50%,
+        100% 50%;
+    background-position:
+        bottom left,
+        bottom right,
+        left bottom;
+}
+
+.home-course-links-next>a{
+    display: none;
+}
+.home-course-links-current>a {
+    display: flex;
+    float: left;
+    
+    padding: 0px;
+    visibility: visible;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        2px 50%,
+        100% 50%;
+    background-position:
+        bottom left,
+        bottom left,
+        left bottom;
+}
+
+/* font size */
+
+#current-course-body>.time-group-a>.group>.time-start,
+#current-course-body>.time-group-a>.group>.time-dash,
+#current-course-body>.time-group-a>.group>.time-end,
+#current-course-body>.state-group-a>.group>.state,
+.home-course-links>a {
+    font-size: 16pt;
+    font-weight: 600;
+}

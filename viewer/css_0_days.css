@@ -1,0 +1,241 @@
+.by-copy-right{
+    position: fixed;
+    bottom: 5px;
+    right: 30px;
+    font-weight: 1000;
+    font-size: 8pt;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* container */
+.window {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 93vh;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 6%;
+    left: 0%;
+}
+
+#app-window {
+    width: 100%;
+}
+
+/* pages */
+section {
+    position: relative;
+    padding: 2%;
+    height: 90%;
+    width: 95.8%;
+    scroll-snap-align: start;
+    display: table;
+}
+
+/* main page */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* home */
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.comment {
+    font-size: 12pt;
+}
+
+/* day */
+.title {
+    font-size: 46pt;
+    display: block;
+    text-align: left;
+    padding-bottom: 2%;
+}
+
+.course {
+    font-size: 14pt;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+#today-link {
+    text-decoration: none;
+}
+
+/* navigation bar */
+#navigation {
+    /* style */
+    border-bottom: 2px solid darkred;
+    /* position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* size */
+    width: 99%;
+    padding: 0.5%;
+    /* center children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#navigation-container {
+    display: table-cell;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+#scroll-indicator {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 21px;
+    background-color: lightsalmon;
+    border-bottom: 3px solid darkred;
+    border-top: 3px solid darkred;
+    z-index: -1;
+    padding-right: 2px;
+    margin-top: -3px;
+}
+
+.nav-button-container {
+    position: relative;
+    float: left;
+    width: 100px;
+}
+
+.nav-button {
+    /* text */
+    color: darkred;
+    font-size: 14pt;
+    text-decoration: none;
+    /* size */
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    /* align */
+    text-align: center;
+
+    /* display */
+    display: block;
+
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        100% 35%;
+    background-position:
+        left center,
+        center center;
+}
+
+#nav-button-sun {
+    padding-right: 1px;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        2px 70%,
+        100% 35%;
+    background-position:
+        left center,
+        100% center,
+        center center;
+}
+
+
+
+/* in tab course time indicator */
+.on-tab-btn-course-time-indicator {
+    position: absolute;
+    height: 2px;
+    top: 0px;
+    background-color: gainsboro;
+    border-left: 1px solid darkred;
+    border-right: 1px solid darkred;
+    box-sizing: border-box;
+}
+
+.on-tab-btn-course-time-indicator-next {
+    background-color: darkgreen;
+}
+
+.on-tab-btn-course-time-indicator-current {
+    background-color: blueviolet;
+}
+
+.nav-button:hover {
+    color: lightsalmon;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        100% 35%;
+    background-position:
+        left center,
+        center center;
+}
+
+#nav-button-sun:hover {
+    padding-right: 1px;
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        2px 70%,
+        100% 35%;
+    background-position:
+        left center,
+        100% center,
+        center center;
+}
+
+#today-link:hover,
+.course-link:hover {
+    color: darkblue;
+}
+
+.nav-button-current-day{
+    /* style */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        100% 70%;
+    background-position:
+        left center,
+        center center;
+}
+.courses-page{
+    padding-right: 5px;
+    margin-top: -4px;
+    font-size: 14pt;
+}

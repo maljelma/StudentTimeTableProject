@@ -1,0 +1,10 @@
+#demo-data-label{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    border: 1px solid #8b0000;
+    padding: 5px 10px;
+    border-radius: 1px;
+    background-color: #ffa07a66;
+    display: none;
+}

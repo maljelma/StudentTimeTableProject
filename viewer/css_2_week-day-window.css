@@ -1,0 +1,229 @@
+a{
+    text-decoration: none;   
+}
+.day-course-home-link{
+    color: darkred;
+    font-weight: 1000;
+    font-size: 12pt;
+}
+.display-course-day {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.current-course-body-day {
+    width: 100%;
+    display: table;
+
+    /* border */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(lightsalmon, lightsalmon),
+        /* linear-gradient(lightsalmon, lightsalmon); */
+        linear-gradient(#ffa07a55, #ffa07a55);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        100% 2px,
+        2px 70%,
+        2px 70%,
+        2px 20%,
+        2px 20%,
+        100% 20%,
+        100% 20%,
+        100% 12%;
+    background-position:
+        top left,
+        bottom center,
+        right bottom,
+        left top,
+        left bottom,
+        right top,
+        bottom left,
+        top left,
+        center center;
+}
+
+.current-course-body-day>.title {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    color: darkred;
+}
+
+/* TIME */
+.current-course-body-day>.time-group-a {
+    width: 100%;
+    display: table;
+}
+
+.current-course-body-day>.time-group-a>.group {
+    width: fit-content;
+    float: left;
+    display: flex;
+}
+
+.current-course-body-day>.time-group-a>.group>.time-start {
+    background-color: transparent;
+}
+
+.current-course-body-day>.time-group-a>.group>.time-dash {
+    padding-top: 5px;
+}
+
+.current-course-body-day>.time-group-a>.group>.time-end {
+    background-color: transparent;
+}
+
+.course-code {
+    float: right;
+
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.course-code,
+.current-course-body-day>.time-group-a>.group>.time-start,
+.current-course-body-day>.time-group-a>.group>.time-end {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* STATE */
+.current-course-body-day>.state-group-a {
+    width: 100%;
+    display: table;
+}
+
+.current-course-body-day>.state-group-a>.group {
+    width: fit-content;
+    float: right;
+}
+
+.current-course-body-day>.state-group-a>.group>.state {
+
+    width: fit-content;
+    visibility: visible;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* font size */
+
+.current-course-body-day>.time-group-a>.group>.time-start,
+.current-course-body-day>.time-group-a>.group>.time-dash,
+.current-course-body-day>.time-group-a>.group>.time-end,
+.current-course-body-day>.state-group-a>.group>.state,
+.course-link,
+.course-code {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+/* LINK */
+.course-link {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+.zoom-link {
+    background-color: transparent;
+}
+
+.home-link,
+.content-link {
+    background-color: transparent;
+}
+
+.home-link,
+.content-link,
+.zoom-link,
+.current-course-body-day>.state-group-a>.group>.state {
+    padding-bottom: 5px;
+}
+
+.day-course-current {
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(lightsalmon, lightsalmon),
+        /* linear-gradient(lightsalmon, lightsalmon); */
+        linear-gradient(to left,#ffa07a55,darkblue,#ffa07a55, #ffa07a55,darkblue,#ffa07a55);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        100% 2px,
+        2px 75%,
+        2px 75%,
+        2px 20%,
+        2px 20%,
+        100% 20%,
+        100% 20%,
+        100% 3%;
+    background-position:
+        top left,
+        bottom center,
+        right bottom,
+        left top,
+        left bottom,
+        right top,
+        bottom left,
+        top left,
+        center center;
+}
+
+.day-course-next {
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(lightsalmon, lightsalmon),
+        /* linear-gradient(lightsalmon, lightsalmon); */
+        linear-gradient(to left,#ffa07a55,darkgreen,#ffa07a55, #ffa07a55,darkgreen,#ffa07a55);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        100% 2px,
+        2px 75%,
+        2px 75%,
+        2px 20%,
+        2px 20%,
+        100% 20%,
+        100% 20%,
+        100% 3%;
+    background-position:
+        top left,
+        bottom center,
+        right bottom,
+        left top,
+        left bottom,
+        right top,
+        bottom left,
+        top left,
+        center center;
+}

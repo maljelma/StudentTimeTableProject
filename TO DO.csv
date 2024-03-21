@@ -1,0 +1,18 @@
+title,section,state,date
+time-table editor,editor,ADDED,01-..-2024
+time indicators design,main window nav-bar,FIXED,01-..-2024
+semester/user info to local-storage,editor,ADDED,01-..-2024
+download/upload time-table,editor,ADDED,01-..-2024
+real-time state(current/next) update,home-page,ADDED,01-..-2024
+real-time state(current/next) update on change only,home-page,ADDED,01-30-2024
+indicator state does not reset,main window nav-bar,FIXED,01-..-2024
+show zoom link,home window>listed-course,ADDED,01-27-2024
+add to github,main,TECH,01-28-2024
+end-time limit,home window>current-home-course,FIXED,01-30-2024
+courses page,courses list page,ADDED,01-30-2024
+sort courses using start-times,editor,ADDED/FIXED,01-30-2024
+(current/next) show color indication,days>listed course,ADDED,01-30-2024
+open links in new window for courses home,home window>listed-course,FIXED,2024-02-05
+move home link to course-title,days>listed course,EDITED,2024-02-15
+"day-course -assignment, -quizzes links",days>listed course,ADDED,01-30-2024
+refactoring required on %view%,view,IMPROVMENT,

@@ -1,0 +1,34 @@
+.top{
+    background-color: lightsalmon;
+    border-bottom: 2px solid darkred;
+}
+
+.top > a{
+    padding-right: 2px;
+    margin-top: -4px;
+    font-size: 14pt;
+}
+.bottom, .middle{
+    background-color: transparent;
+}
+
+.middle > a{
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    border-radius: 0px;
+
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon);
+    background-repeat: no-repeat;
+    background-size:
+        2px 70%,
+        2px 70%,
+        100% 100%;
+    background-position:
+        right center,
+        left center,
+        center center;
+}

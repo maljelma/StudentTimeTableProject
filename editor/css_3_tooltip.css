@@ -1,0 +1,51 @@
+/* this code is from the following tutorial: https://blog.replaybird.com/css-tooltip-examples/ */
+/*
+    use:
+    <div class="tooltip">
+        <div class="tool-tip-text">This is a tooltip</div>
+    </div>
+*/
+/* Tool-tipped element css */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip container css */
+.tooltip .tool-tip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Tooltip container positioning css */
+.tooltip .tool-tip-text {
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s; /* Tooltip animation with css */
+}
+
+/* Tooltip arrow positioning css */
+.tooltip .tool-tip-text::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Tooltip triggering with css */
+.tooltip:hover .tool-tip-text {
+    visibility: visible;
+    opacity: 1;
+}

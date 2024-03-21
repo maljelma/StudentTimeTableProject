@@ -1,0 +1,225 @@
+body {
+    overflow-x: hidden;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+section {
+    border: 0px solid #000;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+}
+
+.r-l-align {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: darkred;
+}
+
+.title,
+.add-course-btn,
+.course-delete-btn {
+    text-decoration: none;
+    font-size: 24pt;
+    padding: 10px;
+}
+
+.add-course-btn {
+    rotate: 45deg;
+}
+
+.courses-list {
+    display: block;
+    height: max-content;
+}
+
+.courses-list>.container {
+    display: flex;
+    height: max-content;
+    border: 0px solid #000;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding-left: 10px;
+
+    /* border */
+    background-image:
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(darkred, darkred),
+        linear-gradient(lightsalmon, lightsalmon),
+        linear-gradient(lightsalmon, lightsalmon),
+        /* linear-gradient(lightsalmon, lightsalmon); */
+        linear-gradient(#ffa07a55, #ffa07a55);
+    background-repeat: no-repeat;
+    background-size:
+        100% 2px,
+        100% 2px,
+        2px 70%,
+        2px 70%,
+        2px 15%,
+        2px 15%,
+        100% 15%,
+        100% 15%,
+        100% 12%;
+    background-position:
+        top left,
+        bottom center,
+        right bottom,
+        left top,
+        left bottom,
+        right top,
+        bottom left,
+        top left,
+        center center;
+}
+
+.courses-list>.container>.main {
+    width: 95%;
+}
+
+.courses-list>.container>.button {
+    width: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.courses-list>.container>.button>.course-delete-btn {
+    text-decoration: none;
+}
+
+.courses-list>.container>.main,
+.courses-list>.container>.button {
+    border: 0px solid #000;
+    float: left;
+    box-sizing: border-box;
+}
+
+.courses-list>.container>.main>.top,
+.courses-list>.container>.main>.middle,
+.courses-list>.container>.main>.bottom {
+    width: 100%;
+    display: flex;
+    /* height: fit-content; */
+    border: 0px solid #000;
+    margin: 2px
+}
+
+.courses-list>.container>.main>.top>.right,
+.courses-list>.container>.main>.top>.left,
+.courses-list>.container>.main>.bottom>.right,
+.courses-list>.container>.main>.bottom>.left {
+    border: 0px solid #000;
+}
+
+input {
+    text-align: center;
+    border: 0px solid #000;
+    border-radius: 0px;
+    font-size: 14pt;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    caret-color: blue;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.time-input {
+    background-color: transparent;
+}
+
+.code-input {
+    width: 94px;
+}
+
+.section-input {
+    width: 40px;
+}
+
+.type-input {
+    width: 40px;
+}
+
+.id-input {
+    width: 86px;
+}
+
+#top-margin {
+    height: 20px;
+}
+
+.title-input {
+    width: 100%;
+    font-size: 18pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation-bar,
+.home-page {
+    padding: 0;
+    display: flex;
+    height: max-content;
+    border: 0px solid #00f;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    margin: -30px;
+    margin-top: -50px;
+}
+
+.navigation-bar {
+    width: 100%;
+    border-bottom: 2px solid darkred;
+    background-color: burlywood;
+    opacity: 0.95;
+}
+
+.nav-btn,
+.home-page-btn {
+    width: 100px;
+    border: 0px solid #000;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+.nav-btn {
+    float: left;
+}
+
+.home-page {
+    position: fixed;
+    display: block;
+    float: right;
+    padding-left: 20px;
+}
+.by-copy-right{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 1000;
+    font-size: 8pt;
+}

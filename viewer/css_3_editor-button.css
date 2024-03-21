@@ -1,0 +1,13 @@
+.home-page
+ {
+    background-color: transparent;
+}
+.home-page-btn {
+    width: 100px;
+    border: 0px solid #000;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}

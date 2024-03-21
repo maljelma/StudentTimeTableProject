@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTimeTableEditor</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css_0_style.css">
+    <link rel="stylesheet" href="css_1_semester-data.css">
+    <link rel="stylesheet" href="css_2_blueprint-nodes.css">
+    <link rel="stylesheet" href="css_3_tooltip.css">
+    <!-- JS -->
+    <script src="_0_data-objects-structure.js" defer></script>
+    <script src="_1_constants.js" defer></script>
+    <script src="_2_functions.js" defer></script>
+    <script src="_3_generate-day-sections.js" defer></script>
+    <script src="_4_the-add-course-btn.js" defer></script>
+    <script src="_5_the-course-delete-btn.js" defer></script>
+    <script src="_6_load-data-from-local-storage.js" defer></script>
+    <script src="_7_nav-buttons.js" defer></script>
+    <script src="_8_home-page.js" defer></script>
+    <script src="_9_semester-data.js" defer></script>
+    <script src="_10_page-close-save-focused-input.js" defer></script>
+</head>
+
+<body id="body">
+    <div class="by-copy-right">The Student Time Table Project</div>
+    <!-- blueprint-nodes -->
+    <div class="blueprint-nodes">
+        <!-- course-widget -->
+        <div class="container course-widget blueprint-node" id="course-widget-blueprint">
+            <div class="main">
+                <div class="top r-l-align">
+                    <div class="right">
+                        <input type="time" name="startTime" class="time-input" placeholder="00:00 AM"
+                            pattern="^(1[0-2]|0?[1-9]):([0-5]?[0-9])( ?[AP]M)?$" title="Enter a valid time">
+                        <span>-</span>
+                        <input type="time" name="endTime" class="time-input" placeholder="00:00 PM"
+                            pattern="^(1[0-2]|0?[1-9]):([0-5]?[0-9])( ?[AP]M)?$">
+                    </div>
+                    <div class="left">
+                        <input type="text" name="code" class="code-input" placeholder="COMP123">
+                        <span>•</span>
+                        <input type="text" name="section" class="section-input" placeholder="401">
+                    </div>
+                </div>
+                <div class="middle">
+                    <input type="text" name="title" class="title-input" placeholder="Title">
+                </div>
+                <div class="bottom r-l-align">
+                    <div class="right tooltip">
+                        <input type="text" name="id" class="id-input" tooltip="course id" placeholder="0000000"/>
+                        
+                        <div class="tool-tip-text">...e.ca/d2l/home/<strong>1079704</strong></div>
+                    </div>
+                    <div class="left">
+                        <input type="text" name="type" class="type-input" placeholder="TYP">
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#/" class="course-delete-btn">⨉</a>
+            </div>
+        </div>
+        <!-- day-section -->
+        <section class="day-section blueprint-node" id="day-section-blueprint">
+            <div class="r-l-align">
+                <div class="title">
+                    <!-- DAY NAME GOES HERE -->
+                </div>
+                <a href="#/" class="add-course-btn">⨉</a>
+            </div>
+            <div class="courses-list" id="DAYNAME_E.G._MON">
+                <!-- CLASS WIDGETS GOES HERE -->
+            </div>
+        </section>
+    </div>
+    <!-- page start -->
+    <!-- NAVIGATION-BAR -->
+    <div class="navigation-bar">
+        <a href="#/" class="nav-btn" id="nav-btn-load">Load</a>
+        <a href="#/" class="nav-btn" id="nav-btn-download">Download</a>
+    </div>
+    <!-- HOME PAGE BUTTON -->
+    <div class="home-page">
+        <a href="#/" class="home-page-btn" id="home-page-btn">Home</a>
+    </div>
+    <!-- SEMESTER DATA -->
+    <section class="semester-sec" id="semester-sec">
+        <div class="user-name">
+            <label class='semester-label'>User Name</label>
+        </div>
+        <div class="user-name">
+            <input type="text" name="userName" class="semester-input" placeholder="User Name">
+        </div>
+        <div class="semester-date">
+            <div class="semester-date-start">
+                <label class='semester-label'>Semester Start Date</label>
+            </div>
+            <div class="semester-date-end">
+                <label class='semester-label'>Semester End Date</label>
+            </div>
+        </div>
+        <div class="semester-date">
+            <div class="semester-date-start">
+                <input type="date" name="start" class="semester-input semester-input-date" placeholder="YYYY/MM/DD">
+            </div>
+            <div class="semester-date-end">
+                <input type="date" name="end" class="semester-input semester-input-date" placeholder="YYYY/MM/DD">
+            </div>
+        </div>
+        <div class="semester-day-interval">
+            <div class="semester-day-interval-start">
+                <label class='semester-label'>Day Start Time</label>
+            </div>
+            <div class="semester-day-interval-end">
+                <label class='semester-label'>Day End Time</label>
+            </div>
+        </div>
+        <div class="semester-day-interval">
+            <div class="semester-day-interval-start">
+                <input type="time" name="dayStartTime" class="semester-input semester-input-time" placeholder="08:30 AM">
+            </div>
+            <div class="semester-day-interval-end">
+                <input type="time" name="dayEndTime" class="semester-input semester-input-time" placeholder="11:20 PM">
+            </div>
+        </div>
+        <div class="week-number-offset">
+            <label class='semester-label'>Week Number Offset</label>
+        </div>
+        <div class="week-number-offset">
+            <input type="number" name="weekOffset" class="semester-input" placeholder="0">
+        </div>
+    </section>
+    <!-- DAY SECTIONS NODES GOES HERE -->
+</body>
+
+</html>

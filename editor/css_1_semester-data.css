@@ -1,0 +1,81 @@
+/* INPUTS */
+.semester-sec {
+    display: inline-block;
+
+    width: 100%;
+}
+
+.semester-sec>.user-name {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.semester-sec>.semester-date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.semester-sec>.semester-date>.semester-date-start {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.semester-sec>.semester-date>.semester-date-end {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.semester-sec>.semester-day-interval {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.semester-sec>.semester-day-interval>.semester-day-interval-start {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.semester-sec>.semester-day-interval>.semester-day-interval-end {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.semester-sec>.week-number-offset {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.semester-input {
+    font-size: 18pt;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 15px;
+}
+
+.semester-input-time {
+    margin-left: 40px;
+}
+
+.semester-input-date {
+    margin-left: 30px;
+}
+
+/* LABELS */
+.semester-label {
+    display: block;
+    font-size: 12pt;
+    text-align: center;
+    color: #333;
+    font-weight: 1000;
+}
