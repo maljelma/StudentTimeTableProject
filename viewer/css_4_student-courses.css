@@ -14,3 +14,14 @@
 .courses-page{
     display: none;
 }
+
+.course-schedule{
+    padding-left: 10px;
+    padding-top: 8px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.schedule-time-space{
+    padding: 5px;
+}
