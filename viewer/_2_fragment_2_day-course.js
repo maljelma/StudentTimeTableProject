@@ -1,3 +1,4 @@
+// `tHe tItLe` -> `The Title`
 function strToTitle(str){
     let wordsArray = str.split(" ")
     let wordStack = ""

@@ -45,10 +45,6 @@
     align-items: center;
 }
 
-.c-item {
-    width: fit-content;
-}
-
 #home-header-container {
     padding: 10px;
     font-size: 46pt;
@@ -83,7 +79,6 @@
 }
 
 #current-course-body {
-    width: fit-content;
     border: 0px solid #000;
     padding-top: 10px;
 }
@@ -119,7 +114,6 @@
 
 /* TIME */
 #current-course-body>.time-group-a>.group {
-    width: fit-content;
     float: left;
     display: flex;
 }
@@ -182,12 +176,10 @@
 }
 
 #current-course-body>.state-group-a>.group {
-    width: fit-content;
     float: right;
 }
 
 #current-course-body>.state-group-a>.group>.state {
-    width: fit-content;
     visibility: visible;
     padding-left: 10px;
     padding-right: 10px;

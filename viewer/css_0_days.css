@@ -23,11 +23,18 @@
 }
 
 #app-window {
-    width: 100%;
+    padding-top: 26px;
+    box-sizing: border-box;
+    width: 97vw;
+    height: 95vh;
+    position: relative;
+}
+#app-window::-webkit-scrollbar{
+    display: none;
 }
 
 /* pages */
-section {
+div[vertical-scrollable-tab] {
     position: relative;
     padding: 2%;
     height: 90%;
@@ -122,7 +129,6 @@ section {
     text-decoration: none;
     /* size */
     width: 100%;
-    height: fit-content;
     padding: 0;
     margin: 0;
     /* align */
@@ -238,4 +244,12 @@ section {
     padding-right: 5px;
     margin-top: -4px;
     font-size: 14pt;
+}
+
+
+.ind{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
 }

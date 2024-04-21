@@ -1,3 +1,4 @@
+/* loads before all js files */
 const demo = {}
 demo.timetable = [
     {

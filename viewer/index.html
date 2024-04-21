@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css_1_home-window.css">
     <link rel="stylesheet" href="css_2_week-day-window.css">
     <link rel="stylesheet" href="css_3_editor-button.css">
+    <link rel="stylesheet" href="css_4_student-courses.css">
     <link rel="stylesheet" href="../demo_data.css">
     <!-- JS -->
     <!-- Important: loading order is important -->
@@ -22,54 +23,78 @@
     <script src="_3_fragment_1_home-listed-course.js" defer></script>
     <script src="_4_main.js" defer></script>
     <script src="_5_editor-button.js" defer></script>
+    <script src="_6_fragment_3_all-courses.js" defer></script>
+    <script src="../lib/VertivalScrollable.js"></script>
+    <script src="../lib/HorizontalScrollable.js"></script>
 </head>
 
 <body>
     <div class="by-copy-right">The Student Time Table Project</div>
     <div class="window" id="app-window">
-        <!-- home -->
-        <section id="home">
-            <div class="container" id="home-window">
-                <div class="c-algin-child">
-                    <div class="c-item" id="home-header-container">
-                        <a href="" id="today-link"></a>
-                        <span id="week-number"></span>
+        <div vertical-scrollable-widget>
+            <div vertical-scrollable-notebook id="application-notebook">
+                <!-- student courses -->
+                <div vertical-scrollable-tab id="courses">
+                    <div horizontal-scrollable-widget>
+                        <div horizontal-scrollable-notebook id="student-courses">
+                            <!-- tabs added here -->
+                        </div>
+                        <div id="student-courses-indicators">
+                            <div horizontal-scrollable-indicators></div>
+                        </div>
                     </div>
                 </div>
-                <div class="comment" id="display-course">
+                <!-- home -->
+                <div id="home" vertical-scrollable-tab>
+                    <div class="container" id="home-window">
+                        <div class="c-algin-child">
+                            <div class="c-item" id="home-header-container">
+                                <a href="" id="today-link"></a>
+                                <span id="week-number"></span>
+                            </div>
+                        </div>
+                        <div class="comment" id="display-course">
 
+                        </div>
+                    </div>
+                    <div id="user-name"></div>
+                </div>
+                <!-- days -->
+                <div id="mon" vertical-scrollable-tab>
+                    <div class="title">Monday</div>
+                </div>
+                <div id="tue" vertical-scrollable-tab>
+                    <div class="title">Tuesday</div>
+                </div>
+                <div id="wed" vertical-scrollable-tab>
+                    <div class="title">Wednesday</div>
+                </div>
+                <div id="thu" vertical-scrollable-tab>
+                    <div class="title">Thursday</div>
+                </div>
+                <div id="fri" vertical-scrollable-tab>
+                    <div class="title">Friday</div>
+                </div>
+                <div id="sat" vertical-scrollable-tab>
+                    <div class="title">Saturday</div>
+                </div>
+                <div id="sun" vertical-scrollable-tab>
+                    <div class="title">Sunday</div>
                 </div>
             </div>
-            <div id="user-name"></div>
-        </section>
-        <!-- days -->
-        <section id="mon">
-            <div class="title">Monday</div>
-        </section>
-        <section id="tue">
-            <div class="title">Tuesday</div>
-        </section>
-        <section id="wed">
-            <div class="title">Wednesday</div>
-        </section>
-        <section id="thu">
-            <div class="title">Thursday</div>
-        </section>
-        <section id="fri">
-            <div class="title">Friday</div>
-        </section>
-        <section id="sat">
-            <div class="title">Saturday</div>
-        </section>
-        <section id="sun">
-            <div class="title">Sunday</div>
-        </section>
+            <div class="ind">
+                <div vertical-scrollable-indicators></div>
+            </div>
+        </div>
     </div>
     <div id="navigation">
         <div class="home-page">
             <a href="#/" class="home-page-btn" id="home-page-btn">⁞</a>
         </div>
         <div id="navigation-container">
+            <div class="nav-button-container">
+                <a href="#courses" class="nav-button" id="nav-button-home">Courses</a>
+            </div>
             <div class="nav-button-container">
                 <a href="#home" class="nav-button" id="nav-button-home">Home</a>
             </div>
@@ -97,10 +122,16 @@
             <div id="scroll-indicator"></div>
         </div>
         <div class="courses-page">
-            <a href="../courses/index.html" class="home-page-btn" id="home-page-btn">⁘</a>
+            <a href="../courses/index.html" class="home-page-btn" id="course-btn">⁘</a>
         </div>
     </div>
     <div id="demo-data-label">*Demo Data: Use Editor to Initialize Application OR Fill Missing Semester Data</div>
+    <script>
+        window.addEventListener("DOMContentLoaded",()=>{
+            let notebooks = document.querySelectorAll("div[vertical-scrollable-tab]");
+            setTimeout(()=>notebooks[1].scrollIntoView({ behavior: 'smooth' }),500);
+        });
+    </script>
 </body>
 
 </html>

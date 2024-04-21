@@ -1,0 +1,16 @@
+#student-courses{
+    > div[horizontal-scrollable-tab]{
+        padding: 2%;
+    }
+}
+#student-courses-indicators{
+    background-color: black;
+    display: table;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    width: 100%;
+}
+.courses-page{
+    display: none;
+}

@@ -104,13 +104,13 @@ timetable.forEach((course) => {
 });
 
 /* scroll event */
-let appWindow = document.getElementById('app-window');
+let appNotebook = document.querySelector('#application-notebook');//('#app-window');
 let scrollIndicator = document.getElementById('scroll-indicator');
 let navigationContainer = document.getElementById('navigation-container');
 
-appWindow.addEventListener("scroll", (event) => {
-    let scrollTop = appWindow.scrollTop;
-    let scrollHeight = appWindow.scrollHeight;
+appNotebook.addEventListener("scroll", (event) => {
+    let scrollTop = appNotebook.scrollTop;
+    let scrollHeight = appNotebook.scrollHeight;
     let scrollWidth = navigationContainer.clientWidth;
     let dist = (scrollTop * scrollWidth) / scrollHeight
     scrollIndicator.style.left = dist + 'px';
@@ -145,7 +145,12 @@ function refreshData() {
         if (new Date() < new Date(semesterData.end)) {
             let weekNumber = weeks_between(new Date(semesterData.start), new Date()) + Number(semesterData.weekOffset) + 1;
             let weekNumberDiv = document.getElementById('week-number');
-            weekNumberDiv.innerHTML = ` • Week ${weekNumber}`;
+            if (weekNumber <= 14){
+                weekNumberDiv.innerHTML = ` • Week ${weekNumber}`;
+            }
+            else{
+                weekNumberDiv.innerHTML = ` • See You Next Semester`;
+            }
         }
     }
 
