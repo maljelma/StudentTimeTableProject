@@ -5,7 +5,7 @@
     "short_name": "MyTimeTable",
     "start_url": "../",
     "display": "standalone",
-    "background_color": "#ffa07a",
+    "background_color": "#fff",
     "theme_color": "#8b0000",
     "orientation": "portrait-primary",
     "permissions": [],
