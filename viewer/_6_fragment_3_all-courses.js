@@ -35,7 +35,8 @@ studentCoursesArray.forEach((course,i) => {
     course = {...course,startTime:"",endTime:""}
     let courseStringElement = buildCourse(course);
     /** @type {HTMLDivElement} */
-    let courseElement = parser.parseFromString(courseStringElement, "text/html").childNodes[0];
+    let courseElement = parser.parseFromString(courseStringElement, "text/html").childNodes[0].querySelector("div");
+    
     currentTab.appendChild(courseElement);
 
     // apply the schedule of the course

@@ -1,0 +1,33 @@
+/* mobile devices layout */
+@media (max-width: 768px) {
+    .semester-input {
+        font-size: 1rem;
+        padding: 0;
+        margin: 2px 0 15px 0;
+        display: block;
+    }
+
+    .container.course-widget .title-input,
+    .container.course-widget input{
+        max-width: 3.7rem;
+        font-size: 0.75rem;
+    }
+
+    .container.course-widget .title-input {
+        max-width: unset;
+    }
+
+    .container.course-widget{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px 0 5px;
+        overflow: hidden;
+    }
+
+    .course-delete-btn{
+        font-size: 1.2rem;
+        color: #f00;
+    }
+}

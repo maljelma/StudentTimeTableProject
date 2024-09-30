@@ -1,0 +1,158 @@
+/* mobile devices layout */
+@media (max-width: 768px) {
+
+    #home-header-container,
+    div[vertical-scrollable-tab] .title {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+    div[vertical-scrollable-tab] .title {
+        padding: 0 0 20px 0;
+    }
+
+    .current-course-body-day>.time-group-a>.group>.time-start,
+    .current-course-body-day>.time-group-a>.group>.time-dash,
+    .current-course-body-day>.time-group-a>.group>.time-end,
+    .current-course-body-day>.state-group-a>.group>.state,
+    .course-link,
+    .course-code {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .course-schedule{
+        font-size: 0.4rem;
+        padding: 5px 10px;
+    }
+
+    div[vertical-scrollable-tab] .current-course-body-day .title{
+        padding: 0;
+    }
+
+    .day-course-home-link {
+        font-weight: 800;
+        font-size: 0.6rem;
+    }
+
+    .current-course-body-day{
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #scroll-indicator,
+    .nav-button-container {
+        width: 80px;
+        height: 20px;
+        padding: 5px 0;
+    }
+
+    .nav-button-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-button {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    body {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-areas: "nav wnd";
+        grid-template-columns: 50px calc(100vw - 50px);
+        grid-template-rows: 100vh;
+        height: 100vh;
+        margin: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    #navigation {
+        width: 100vh;
+        height: 50px;
+        transform: rotate(90deg) translate(0, -100%);
+        transform-origin: top left;
+        border-bottom: none;
+        border-top: 2px solid darkred;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 15px;
+        box-sizing: border-box;
+        grid-area: nav;
+        overflow: hidden;
+    }
+
+    #app-window {
+        top: 0;
+        display: flex;
+        place-self: stretch;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: 1px solid black;
+        box-sizing: border-box;
+        grid-area: wnd;
+        overflow: hidden;
+        height: 100%;
+        width: unset;
+    }
+
+    div[vertical-scrollable-tab] {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #home-listed-course-title {
+        font-size: 1rem;
+    }
+
+    #current-course-body>.title {
+        min-width: 100%;
+    }
+
+    #student-courses>div[horizontal-scrollable-tab] {
+        padding: 0;
+    }
+
+    #student-courses-indicators {
+        position: relative;
+        bottom: 10px;
+    }
+
+    body #demo-data-label {
+        position: absolute;
+        font-size: 0.6rem;
+        left: 55px;
+        bottom: 10px;
+        transform: rotate(90deg) translate(-100%, 0);
+        transform-origin: bottom left;
+        text-wrap: nowrap;
+    }
+
+    #current-course-body>.time-group-a>.group>.time-start, 
+    #current-course-body>.time-group-a>.group>.time-dash, 
+    #current-course-body>.time-group-a>.group>.time-end, 
+    #current-course-body>.state-group-a>.group>.state, .home-course-links>a {
+        font-size: 0.6rem;
+    }
+
+    #current-course-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 0;
+        width: 90%;
+        height: 60px;
+    }
+
+    #current-course-body .title{
+        padding: 0;
+    }
+}
