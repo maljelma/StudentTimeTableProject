@@ -1,4 +1,4 @@
-.by-copy-right{
+.by-copy-right {
     position: fixed;
     bottom: 5px;
     right: 30px;
@@ -29,7 +29,8 @@
     height: 95vh;
     position: relative;
 }
-#app-window::-webkit-scrollbar{
+
+#app-window::-webkit-scrollbar {
     display: none;
 }
 
@@ -227,7 +228,7 @@ div[vertical-scrollable-tab] {
     color: darkblue;
 }
 
-.nav-button-current-day{
+.nav-button-current-day {
     /* style */
     background-image:
         linear-gradient(darkred, darkred),
@@ -240,14 +241,15 @@ div[vertical-scrollable-tab] {
         left center,
         center center;
 }
-.courses-page{
+
+.courses-page {
     padding-right: 5px;
     margin-top: -4px;
     font-size: 14pt;
 }
 
 
-.ind{
+.ind {
     position: fixed;
     height: 100%;
     top: 0;
